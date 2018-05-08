@@ -1,0 +1,5 @@
+mixin navbar(mode)
+  - var links = ['Преимущества', 'Как начать', 'Куда инвестировать', 'Условия', 'Где инвестировать', 'Вопрос - Ответ']
+  +b.NAV.navbar(class=`${mode ? `navbar_${mode}` : ''}`)&attributes(attributes)
+    each link in links
+      +e.A.link(href='#')= link

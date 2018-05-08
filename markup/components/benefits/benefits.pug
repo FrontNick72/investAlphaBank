@@ -1,0 +1,26 @@
+include ../section-title/section-title
+
+mixin benefits()
+  +b.SECTION.section._theme_default
+    +b.benefits.container
+      +section-title('Преимущества')
+      +e.title Инвестировать просто и выгодно
+      +b.row._no-wrap.benefits-wrapper
+        +b.column._xs-6._sm-4._md-4._lg-4
+          +b.benefit
+            +e.icon#shield
+              include ../../static/img/svg/high-icon.svg
+            +e.title._active Высокая доходность
+            +e.text Инвестиции позволяют инвестору-новичку зарабатывать больше на широком ассортименте финансовых инструментов.
+        +b.column._xs-6._sm-4._md-4._lg-4
+          +b.benefit
+            +e.icon
+              include ../../static/img/svg/easy-icon.svg
+            +e.title Легко пользоваться
+            +e.text Все шаги сопровождаются пояснениями. Контроль за инвестициями непосредственно в приложении в режиме реал-тайм.
+        +b.column._xs-6._sm-4._md-4._lg-4
+          +b.benefit
+            +e.icon#percent
+              include ../../static/img/svg/safe-icon.svg
+            +e.title Средства в безопасности
+            +e.text Купить или продать ценную бумагу можно в режиме 23/7. Приобретение ценных бумаг.

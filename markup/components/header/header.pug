@@ -1,0 +1,27 @@
+include ./partials/navbar/navbar
+include ../social-buttons/social-buttons
+include ../button-invest/button-invest
+include ../logo/logo
+
+mixin header(data)
+  +b.HEADER.page-header
+    +e.top-content.container
+      +e.A.logo(href='#')
+        +logo()
+      +e.col
+          +e.content
+            +b.header-content
+              +e.text Вы не клиент Альфа-банка?
+              +e.A.title(href='#') Стать клиентом
+          +e.buttons
+            +social-buttons()
+
+    +e.central-content.container
+      +e.title Инвестиции с Альфа-Банком
+      +e.text Инвестировать и зарабатывать больше на облигациях, ПИФах и других инструментах просто и удобно
+      +button-invest()
+
+    +e.footer.__invisible-on-show
+      .container
+        +navbar().page-header__navbar
+

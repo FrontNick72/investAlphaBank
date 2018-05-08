@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>0D64713F-1D6C-4AC9-B841-68C3E8731B49</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ab-invest-1_4-05" transform="translate(-930.000000, -959.000000)" fill="#F03226" fill-rule="nonzero">
+            <g id="advantages" transform="translate(0.000000, 700.000000)">
+                <g id="3" transform="translate(930.000000, 259.000000)">
+                    <g id="safe-icon">
+                        <path d="M59,0 L1,0 C0.447,0 0,0.448 0,1 L0,55 C0,55.552 0.447,56 1,56 L5,56 L5,59 C5,59.552 5.447,60 6,60 L16,60 C16.553,60 17,59.552 17,59 L17,56 L41,56 L41,59 C41,59.552 41.447,60 42,60 L52,60 C52.553,60 53,59.552 53,59 L53,56 L59,56 C59.553,56 60,55.552 60,55 L60,1 C60,0.448 59.553,0 59,0 Z M15,58 L7,58 L7,56 L15,56 L15,58 Z M51,58 L43,58 L43,56 L51,56 L51,58 Z M58,54 L52,54 L42,54 L16,54 L6,54 L2,54 L2,2 L58,2 L58,54 Z" id="Shape"></path>
+                        <path d="M52,26 L52,22 L54,22 C54.553,22 55,21.552 55,21 L55,11 C55,10.448 54.553,10 54,10 L52,10 L52,5 C52,4.448 51.553,4 51,4 L5,4 C4.447,4 4,4.448 4,5 L4,51 C4,51.552 4.447,52 5,52 L51,52 C51.553,52 52,51.552 52,51 L52,46 L54,46 C54.553,46 55,45.552 55,45 L55,35 C55,34.448 54.553,34 54,34 L52,34 L52,30 L52,26 Z M50,50 L6,50 L6,6 L50,6 L50,10 L46,10 C45.447,10 45,10.448 45,11 L45,21 C45,21.552 45.447,22 46,22 L50,22 L50,25 L47,25 C46.447,25 46,25.448 46,26 L46,30 C46,30.552 46.447,31 47,31 L50,31 L50,34 L46,34 C45.447,34 45,34.448 45,35 L45,45 C45,45.552 45.447,46 46,46 L50,46 L50,50 Z M50,27 L50,29 L48,29 L48,27 L50,27 Z M53,36 L53,39 L50,39 L50,41 L53,41 L53,44 L51,44 L47,44 L47,36 L51,36 L53,36 Z M51,20 L47,20 L47,12 L51,12 L53,12 L53,15 L50,15 L50,17 L53,17 L53,20 L51,20 Z" id="Shape"></path>
+                        <path d="M31,13 L10,13 C9.447,13 9,13.448 9,14 L9,42 C9,42.552 9.447,43 10,43 L31,43 C31.553,43 32,42.552 32,42 L32,14 C32,13.448 31.553,13 31,13 Z M30,41 L11,41 L11,23 L30,23 L30,41 Z M30,21 L11,21 L11,15 L30,15 L30,21 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" x="14" y="26" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="19" y="26" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="24" y="26" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="14" y="31" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="19" y="31" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="24" y="31" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="14" y="36" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="19" y="36" width="3" height="2"></rect>
+                        <rect id="Rectangle-path" x="24" y="36" width="3" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

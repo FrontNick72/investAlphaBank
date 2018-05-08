@@ -1,0 +1,42 @@
+.benefits
+
+ &__title
+  color #172A3F
+  font-size $fz-giant
+  font-weight 100
+  line-height 42px
+  margin-bottom 80px
+
+.benefit
+
+  &__icon
+    margin-bottom 32px
+
+  &__title
+    color #172a3f
+    font-size $fz-xxl
+    font-weight 300
+    line-height 28px
+    margin-bottom 16px
+    position relative
+    float left
+
+    &_active
+      position relative
+      &:before
+        content ''
+        background-color #EF3124
+        border-radius 50%
+        position absolute
+        top 0
+        right -11px
+        height 4px
+        width 4px
+
+
+  &__text
+    clear both
+    color #172A3F
+    font-size 15px
+    font-weight 300
+    line-height 22px

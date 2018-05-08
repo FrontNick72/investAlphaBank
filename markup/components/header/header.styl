@@ -1,0 +1,107 @@
+$transition-duration = .3s
+
+.page-header
+  background url('%=static=%/general/ab-invest-mainscreen.png') no-repeat;
+  background-size cover
+  background-position bottom
+  position relative
+
+  &__footer
+    border-top 1px solid #fcfcfc
+
+    +below('sm')
+      display none
+
+  &__navbar
+    padding-top 30px
+    padding-bottom 30px
+
+  &__title
+    color #FFF
+    font-size $fz-biggest
+    font-weight 100
+    line-height 66px
+    margin-bottom 24px
+    width 42%
+
+  &__text
+    color #FFFFFF
+    font-size $fz-large
+    font-weight 300
+    line-height 26px
+    margin-bottom 60px
+    width 42%
+
+  &__top-content
+    position relative
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    margin-bottom 100px
+
+  &__logo
+    width 220px
+    height 96px
+    border-radius 0 0 6px 6px
+    background-color #F03226
+    flex-shrink 0
+    display flex
+    align-items center
+    justify-content center
+    // +below('sm')
+    // +below('xs')
+
+  &__col
+    display flex
+    align-items center
+    z-index 1
+
+    +above('sm')
+      min-height 60px
+
+    +below('md')
+      ^[0]_is_shown &
+        width 100%
+
+    +below('sm')
+      width 100%
+      justify-content space-between
+
+  &__content
+    margin-right 55px
+    margin-left auto
+
+    +below('sm')
+      margin-right 15px
+
+.header-content
+  &__title
+    display block
+    font-size $fz-medium
+    line-height 19px
+    color #fff
+    font-weight 500
+    text-decoration none
+    transition 0.3s ease text-decoration
+
+    &:hover
+      text-decoration underline
+
+  &__text
+    color #fff
+    font-size $fz-small
+    line-height 15px
+
+@keyframes fade-in
+  0%
+    opacity 0
+
+  100%
+    opacity 1
+
+@keyframes fade-out
+  0%
+    opacity 1
+
+  100%
+    opacity 0

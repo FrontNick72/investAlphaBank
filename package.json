@@ -1,0 +1,29 @@
+{
+  "name": "Alfa-bank invest",
+  "version": "1.0.0",
+  "description": "Alfa-bank invest landing",
+  "main": "gulpfile.js",
+  "directories": {},
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "swiper": "^4.2.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "bemto.pug": "^2.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "gulp": "^3.9.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "rupture": "^0.7.1"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "author": "Nikita Demyanenko nd@crtweb.ru",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+extends _template.pug
+include ../components/benefits/benefits
+include ../components/start-investing/start-investing
+
+
+block body
+  +benefits()
+  +start-investing
+
+
+block scripts
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
