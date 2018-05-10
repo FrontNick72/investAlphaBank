@@ -1,0 +1,61 @@
+include ../section-title/section-title
+include ../button-invest/button-invest
+
+mixin investment-options()
+  +b.investment-options.container
+    +e.title Где инвестировать
+    +e.tabs
+      +e.A.tab(href='#') Мобильное приложение
+      +e.A.tab._active(href='#') Интернет-банк
+      +e.A.tab(href='#') Отделение банка
+    +e.tab-wrapper(data-type='mobile')
+      +e.content._active(data-step=1)
+        +e.text Скачайте приложение
+        +e.download-block
+          +b.BUTTON.download-button
+            +e.icon
+              include ../../static/img/svg/apple-icon.svg
+            +e.text
+              +e.SPAN Скачать на
+              +e.name AppStore
+          +b.BUTTON.download-button
+            +e.icon
+              include ../../static/img/svg/google-play.svg
+            +e.text
+              +e.SPAN Скачать на
+              +e.name Play Market
+        +e.text._margin Если вы не наш клиент, то сначала
+        +e.button
+          +button-invest('Стать клиентом')
+      +e.content(data-step=2)
+        +e.text Авторизируйтесь в приложении. На главном экране выберите раздел «Инвестиции». Ознакомьтесь со списком предлагаемых инструментов.
+      +e.content(data-step=3)
+        +e.text Выберите инструмент для инвестирования, ознакомьтесь с основной информацией и нажмите «Открыть брокерский счет».
+      +e.content(data-step=4)
+        +e.text Поздравляем, вы открыли брокерский счет. В карточке выбранной облигации появилась кнопка «Купить». Нажмите кнопку для расчета нужной суммы для покупки и начните зарабатывать.
+        +e.download-block
+          +e.A.social-icon(href='#')
+            include ../../static/img/svg/apple-icon.svg
+          +e.A.social-icon(href='#')
+            include ../../static/img/svg/google-play.svg
+          +e.button
+            +button-invest('Стать клиентом')
+      +e.steps
+        +e.A.step._active(href='#' data-step=1) Шаг 1
+        +e.A.step(href='#' data-step=2) Шаг 2
+        +e.A.step(href='#' data-step=3) Шаг 3
+        +e.A.step(href='#' data-step=4) Шаг 4
+      +b.mobile-block
+        img(src='%=static=%img/general/phone-ab.png' alt='')
+        +e.photo-wrapper
+          +e.IMG.photo._active(data-step=1 src='%=static=%img/general/step-1.png' alt='')
+          +e.IMG.photo(data-step=2 src='%=static=%img/general/step-2.png' alt='')
+          +e.IMG.photo(data-step=3 src='%=static=%img/general/step-3.png' alt='')
+          +e.IMG.photo(data-step=4 src='%=static=%img/general/step-4.png' alt='')
+    +e.tab-wrapper._active(data-type='internet-bank')
+      +e.text Управлять своими инвестициями вы также можете через интернет-банк «Альфа-банка».
+      br
+      +e.text Для этого вам необходимо&nbsp;
+        a(href='#') авторизироваться
+        |  или&nbsp;
+        a(href='#') зарегистрироваться.

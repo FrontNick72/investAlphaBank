@@ -1,0 +1,57 @@
+include ../section-title/section-title
+include ../button-invest/button-invest
+
+mixin investment-example()
+  +b.SECTION.section._dark_gradient
+    +b.investment-example.container
+      +section-title('Рассмотрим на примере', 'white')
+      +e.title Инвестиции vs Депозит
+      +b.row.examples-wrapper
+        +b.column._xs-6._sm-6._md-6._lg-6
+          +b.invest-info
+            +e.block
+              +e.title Вложение в депозит
+              +e.tabs-currency
+                +e.A.currency-button._active(href='#') ₽
+                +e.A.currency-button(href='#') $
+                +e.A.currency-button(href='#') €
+            +e.block
+              +e.data
+                +e.text Сумма
+                +e.value 100 000 ₽
+              +e.data
+                +e.text Срок
+                +e.value 1 год
+              +e.data
+                +e.text Купонный доход
+                +e.value 5,55 % годовых
+            +e.result-block
+              +e.data
+                +e.text Сумма в конце срока
+                +e.result-value 105 550 ₽
+
+        +b.column._xs-6._sm-6._md-6._lg-6
+          +b.invest-info
+            +e.block
+              +e.title Вложение в депозит
+              +e.tabs-currency
+                +e.A.currency-button._active(href='#') ₽
+                +e.A.currency-button(href='#') $
+                +e.A.currency-button(href='#') €
+            +e.block
+              +e.data
+                +e.text Сумма
+                +e.value 100 000 ₽
+              +e.data
+                +e.text Срок
+                +e.value 1 год
+              +e.data
+                +e.text Купонный доход
+                +e.value 5,55 % годовых
+            +e.result-block
+              +e.data
+                +e.text Сумма в конце срока
+                +e.result-value 105 550 ₽
+              +button-invest('Инвестировать')(class='invest-info__button')
+      +e.info Данные по депозиту «Победа+», без пакета и капитализации процентов, при сумме инвестирования от 10 тыс. руб. сроком на 1 год.
+

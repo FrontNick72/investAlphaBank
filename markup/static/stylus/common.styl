@@ -51,10 +51,57 @@ html, body
     padding 40px 0 120px
   &_has_no-offset-bottom
     padding-bottom 0
+  &_has_no-offset-top
+    padding-top 0
   &_theme_default
     background-color $c-background_default
   &_theme_content
     background-color $c-background_content
+  &_blue_gradient
+    background url(../img//general/depositBackground.png) no-repeat
+    background-size cover
+    position relative
+
+    &:before
+      content ''
+      background-color #333B47
+      background radial-gradient(circle, rgba(116,138,170,0.4) 0%, rgba(38,46,98,0) 100%), linear-gradient(188.52deg, #636D7B 0%, rgba(46,75,110,0) 100%), linear-gradient(169.82deg, #171D26 0%, rgba(36,55,100,0.1) 100%), radial-gradient(circle, rgba(119,130,146,0.7) 0%, rgba(64,99,127,0) 100%)
+      position absolute
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height 100%
+      width 100%
+
+    &:after
+      content ''
+      background-color #294064
+      background radial-gradient(circle, rgba(107,155,192,0.4) 0%, rgba(38,46,98,0) 100%), linear-gradient(188.52deg, #597494 0%, rgba(46,75,110,0) 100%), linear-gradient(167.01deg, #353853 0%, rgba(36,55,100,0.1) 100%), radial-gradient(circle, rgba(95,134,164,0.7) 0%, rgba(64,99,127,0) 100%)
+      position absolute
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height 100%
+      width 100%
+
+  &_dark_gradient
+    background url(../img//general/depositBackground.png) no-repeat
+    background-size cover
+    position relative
+
+    &:before
+      content ''
+      background-color #294064
+      background radial-gradient(circle, rgba(107,155,192,0.4) 0%, rgba(38,46,98,0) 100%), linear-gradient(188.52deg, #597494 0%, rgba(46,75,110,0) 100%), linear-gradient(167.01deg, #353853 0%, rgba(36,55,100,0.1) 100%), radial-gradient(circle, rgba(95,134,164,0.7) 0%, rgba(64,99,127,0) 100%)
+      position absolute
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height 100%
+      width 100%
 
 .section-wrapper
   background-color $c-background_content

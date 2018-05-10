@@ -1,0 +1,28 @@
+.download-button
+  background transparent
+  border 1px solid rgba(255, 255, 255, 0.2)
+  border-radius 4px
+  box-shadow 0 2px 24px 0 rgba(0,0,0,0.08), 0 2px 4px 0 rgba(181,187,194,0.1)
+  display flex
+  align-items center
+  margin-right 20px
+  text-align left
+  padding 9px 20px
+  $transition(background)
+
+  &:hover
+    background rgba(255,255,255, 0.1)
+
+  &__icon
+    margin-right 20px
+
+  &__text
+    color #FFFFFF
+    font-size $fz-medium
+    font-weight 400
+    line-height 19px
+  &__name
+    font-weight 500
+
+  &:last-child
+    margin-right 0

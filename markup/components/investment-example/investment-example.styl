@@ -1,0 +1,89 @@
+.investment-example
+  background-image url('%=static=%/general/depositBackground.png') no-repeat;
+  position relative
+
+  &__title
+    color #FFFFFF
+    font-size $fz-triple
+    font-weight 300
+    line-height 42px
+    margin-bottom 40px
+
+  &__info
+    color #FFFFFF
+    opacity 0.2
+    font-size 15px
+    line-height 18px
+
+.examples-wrapper
+  margin-bottom 42px
+
+.invest-info
+  background #fff
+  box-shadow 0 2px 24px 0 rgba(0,0,0,0.08), 0 2px 4px 0 rgba(181,187,194,0.1)
+  border-radius 8px
+  padding 40px
+
+  &__block
+    display flex
+    align-items center
+    justify-content space-between
+    margin-bottom 52px
+
+  &__result-block
+    display flex
+    align-items flex-end
+    justify-content space-between
+
+  &__button
+    margin 0
+    padding 20px 52px
+
+  &__data
+    display flex
+    flex-direction column
+
+  &__text
+    color #6D7986
+    font-size 15px
+    line-height 18px
+    opacity 0.4
+    margin-bottom 4px
+
+  &__value
+    color #172A3F
+    font-size $fz-xxl
+    font-weight 300
+    line-height 28px
+
+  &__result-value
+    color $c-ui_red
+    font-size 48px
+    font-weight 300
+    line-height 57px
+
+  &__tabs-currency
+
+  &__currency-button
+    color #6D7986
+    display inline-block
+    font-size $fz-xxl
+    line-height 28px
+    margin-right 19px
+    text-decoration none
+    $transition(color)
+
+    &:hover
+      color $c-ui_red
+
+    &_active
+      color $c-ui_red
+
+    &:last-child
+      margin-right 0
+
+  &__title
+    color #172a3f
+    font-size $fz-xxl
+    font-weight 300
+    line-height 28px

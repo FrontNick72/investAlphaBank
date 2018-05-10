@@ -19,7 +19,8 @@ mixin header(data)
     +e.central-content.container
       +e.title Инвестиции с Альфа-Банком
       +e.text Инвестировать и зарабатывать больше на облигациях, ПИФах и других инструментах просто и удобно
-      +button-invest()
+      +e.button
+        +button-invest('Начать инвестировать')
 
     +e.footer.__invisible-on-show
       .container

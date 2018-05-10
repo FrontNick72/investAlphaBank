@@ -1,0 +1,31 @@
+include ../section-title/section-title
+include ../button-invest/button-invest
+
+mixin conditions()
+  +b.conditions.container
+    +e.title Условия обслуживания
+    +b.row.conditions-wrapper
+      +b.column._xs-3._sm-3._md-3._lg-3
+        +b.condition
+          +e.check
+            include ../../static/img/svg/check-icon.svg
+          +e.title Единая комиссия
+          +e.text При открытии брокерского счета в Альфа-Мобайл или Альфа-Клик комисcия за сделку составит 0,3%.
+      +b.column._xs-3._sm-3._md-3._lg-3
+        +b.condition
+          +e.check
+            include ../../static/img/svg/check-icon.svg
+          +e.title Налоги берем на себя
+          +e.text Альфа-Банк берет на себя расчет и выплату налогов.
+      +b.column._xs-3._sm-3._md-3._lg-3
+        +b.condition
+          +e.check
+            include ../../static/img/svg/check-icon.svg
+          +e.title Низкий порог входа
+          +e.text Сумма покупки облигаций от 1100 ₽, $ или €. ПИФы – 100 ₽.
+      +b.column._xs-3._sm-3._md-3._lg-3
+        +b.condition
+          +e.check
+            include ../../static/img/svg/check-icon.svg
+          +e.title Вывод средств 24/7
+          +e.text Продать бумаги можно в любой день без потери накопленных процентов.

@@ -1,11 +1,21 @@
 extends _template.pug
 include ../components/benefits/benefits
 include ../components/start-investing/start-investing
-
+include ../components/investment-places/investment-places
+include ../components/investment-example/investment-example
+include ../components/compare/compare
+include ../components/conditions/conditions
+include ../components/investment-options/investment-options
 
 block body
   +benefits()
-  +start-investing
+  +start-investing()
+  +investment-places()
+  +investment-example()
+  +compare()
+  +b.SECTION.section._size_small._blue_gradient._has_no-offset-bottom
+    +conditions()
+    +investment-options()
 
 
 block scripts

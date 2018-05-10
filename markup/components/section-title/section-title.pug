@@ -1,2 +1,6 @@
-mixin section-title(title)
-  +b.section-title= title
+mixin section-title(title, color)
+  if color == 'white'
+    +b.section-title._white= title
+  else
+    +b.section-title= title
+
