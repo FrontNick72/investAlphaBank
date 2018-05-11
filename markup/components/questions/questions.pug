@@ -1,0 +1,14 @@
+include ../button-invest/button-invest
+include ../questions-slider/questions-slider
+
+mixin questions()
+  +b.SECTION.section._theme_default._size_small._has_no-offset-bottom
+    +b.questions.container
+      +e.icon
+        include ../../static/img/svg/faq-ico.svg
+      +e.content
+        +e.title Вопрос-ответ
+        +e.text Мы собрали самые популярные вопросы и ответили на них максимально понятно.
+    +questions-slider()
+
+

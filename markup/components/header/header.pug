@@ -1,6 +1,7 @@
 include ./partials/navbar/navbar
 include ../social-buttons/social-buttons
 include ../button-invest/button-invest
+include ../header-content/header-content
 include ../logo/logo
 
 mixin header(data)
@@ -10,9 +11,7 @@ mixin header(data)
         +logo()
       +e.col
           +e.content
-            +b.header-content
-              +e.text Вы не клиент Альфа-банка?
-              +e.A.title(href='#') Стать клиентом
+            +header-content()
           +e.buttons
             +social-buttons()
 

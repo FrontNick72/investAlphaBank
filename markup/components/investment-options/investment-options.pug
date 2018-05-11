@@ -5,10 +5,10 @@ mixin investment-options()
   +b.investment-options.container
     +e.title Где инвестировать
     +e.tabs
-      +e.A.tab(href='#') Мобильное приложение
-      +e.A.tab._active(href='#') Интернет-банк
+      +e.A.tab._active(href='#') Мобильное приложение
+      +e.A.tab(href='#') Интернет-банк
       +e.A.tab(href='#') Отделение банка
-    +e.tab-wrapper(data-type='mobile')
+    +e.tab-wrapper._active(data-type='mobile')
       +e.content._active(data-step=1)
         +e.text Скачайте приложение
         +e.download-block
@@ -52,10 +52,21 @@ mixin investment-options()
           +e.IMG.photo(data-step=2 src='%=static=%img/general/step-2.png' alt='')
           +e.IMG.photo(data-step=3 src='%=static=%img/general/step-3.png' alt='')
           +e.IMG.photo(data-step=4 src='%=static=%img/general/step-4.png' alt='')
-    +e.tab-wrapper._active(data-type='internet-bank')
+    +e.tab-wrapper(data-type='internet-bank')
       +e.text Управлять своими инвестициями вы также можете через интернет-банк «Альфа-банка».
       br
       +e.text Для этого вам необходимо&nbsp;
         a(href='#') авторизироваться
         |  или&nbsp;
         a(href='#') зарегистрироваться.
+      +e.desktop-block
+        img(src='%=static=%img/general/lk-mac.png' alt='')
+    +e.tab-wrapper(data-type='internet-bank')
+      +e.text Стать нашим клиентом и начать инвестировать вы можете в любом отделении «Альфа-Банка».
+      br
+      +e.text Выберите ближайшее отделение «Альфа-Банка» на карте или из списка на сайте банка в разделе Контакты, где вы можете посмотреть режим работы, телефон для связи и статистику загруженности отделения.
+      +e.button-contact
+        +button-invest('Все контакты')
+      +e.desktop-block
+        img(src='%=static=%img/general/map-mac.png' alt='')
+

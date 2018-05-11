@@ -1,0 +1,14 @@
+mixin glossary()
+  +b.popup(data-modal='glossary')
+    +e.content
+      +e.container.container
+        +e.close-button._grey
+        +e.body
+          +b.glossary
+            +e.title Глоссарий
+            +e.tabs
+              +e.A.tab._active(href='#') Облигация
+              +e.A.tab(href='#') ПИФы
+              +e.A.tab(href='#') Отделение банка
+            +e.text-wrapper
+

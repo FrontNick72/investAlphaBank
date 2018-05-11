@@ -1,0 +1,38 @@
+.glossary
+  padding 60px 105px
+
+  &__title
+    color #4A4A4A
+    font-size $fz-triple
+    font-weight 300
+    line-height 47px
+    margin-bottom 22px
+
+  &__tabs
+    border 1px solid rgba(109,121,134, 0.2)
+    border-radius 3px
+    display inline-flex
+    margin-bottom 32px
+
+  &__tab
+    border-right 1px solid rgba(109,121,134, 0.2)
+    color #6D7986
+    font-size 15px
+    line-height 18px
+    padding 12px
+    text-decoration none
+    $transition(background)
+
+    &_active
+      background #f9fafa
+      opacity 0.4
+
+    &:hover
+      background #f9fafa
+
+    &:last-child
+      border-right 0
+
+  &__text-wrapper
+    max-height 357px
+    overflow-y auto

@@ -1,5 +1,4 @@
 import 'babel-polyfill';
 
-/*
-    This file can be used as entry point for webpack!
- */
+import '../../components/questions-slider/questions-slider';
+import '../../components/popup/popup';

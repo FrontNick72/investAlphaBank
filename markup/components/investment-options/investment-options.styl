@@ -1,4 +1,5 @@
 .investment-options
+  height 676px
   padding-top 50px
   position relative
   z-index 1
@@ -48,7 +49,7 @@
     font-weight 300
     line-height 26px
     margin-bottom 17px
-    width 41%
+    width 42%
 
     a
       color #fff
@@ -63,7 +64,14 @@
     display inline-flex
     position absolute
     bottom 115px
-    left 0
+    left 15px
+
+  &__button-contact
+    .button-invest
+      padding 20px 58px
+      position absolute
+      bottom 162px
+      left 15px
 
   &__step
     border-bottom 3px solid rgba(242,242,242, 0.1)
@@ -96,12 +104,13 @@
   &__tab-wrapper
     display none
 
-    &[data-type='mobile']
-      height 467px
-      position relative
-
     &_active
       display block
+
+  &__desktop-block
+    position absolute
+    bottom 162px
+    right 15px
 
   &__tab
     border-right 1px solid rgba(255, 255, 255, 0.2)

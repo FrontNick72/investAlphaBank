@@ -1,7 +1,7 @@
 $transition-duration = .3s
 
 .page-header
-  background url('%=static=%/general/ab-invest-mainscreen.png') no-repeat;
+  background url('%=static=%/general/ab-invest-mainscreen.png') no-repeat
   background-size cover
   background-position bottom
   position relative
@@ -76,24 +76,6 @@ $transition-duration = .3s
 
     +below('sm')
       margin-right 15px
-
-.header-content
-  &__title
-    display block
-    font-size $fz-medium
-    line-height 19px
-    color #fff
-    font-weight 500
-    text-decoration none
-    transition 0.3s ease text-decoration
-
-    &:hover
-      text-decoration underline
-
-  &__text
-    color #fff
-    font-size $fz-small
-    line-height 15px
 
 @keyframes fade-in
   0%

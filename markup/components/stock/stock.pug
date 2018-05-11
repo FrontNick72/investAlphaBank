@@ -1,0 +1,39 @@
+mixin stock()
+  +b.popup(data-modal='stock')
+    +e.content
+      +e.container.container
+        +e.close-button
+        +e.body
+          +b.stock
+            +e.header
+              +e.type Фонд
+              +e.row
+                +e.col
+                  +e.name Индекс ММВВ
+                  +e.company Альфа-Капитал
+                +e.button
+                  +button-invest('Купить')
+            +e.body
+              +e.title О фонде
+              +e.text «Альфа-Капитал Облигации Плюс» — это рублевый облигационный фонд, основу портфеля которого составляют корпоративные рублевые облигации первого и второго эшелонов. Тактически в фонд могут включаться длинные облигации федерального займа. В фонде делается ставка на рост российского долгового рынка.
+              +e.title Преимущества
+              +e.UL.list
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  | Мультивалютная структура
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  | Активное хеджирование валютных рисков
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  | Диверсификация портфеля по всем измерениям: страны, отрасли, валюты и классы активов
+              +b.file-info
+                +e.icon
+                  include ../../static/img/svg/ic-adobe.svg
+                +e.info
+                  +e.A.name(href='#' download) Инвестиционная стратегия фонда
+                  +e.size 540 Кб  |  06.04.2018
+
