@@ -9,6 +9,8 @@ include ../components/investment-options/investment-options
 include ../components/questions/questions
 include ../components/stock/stock
 include ../components/glossary/glossary
+include ../components/bso/bso
+include ../components/evraz/evraz
 
 block body
   +benefits()
@@ -21,8 +23,9 @@ block body
     +investment-options()
   +questions()
   //- +stock()
-  +glossary()
-
+  //- +glossary()
+  //- +bso()
+  +evraz()
 
 block scripts
   script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")

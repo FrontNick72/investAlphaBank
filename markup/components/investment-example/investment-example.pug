@@ -5,9 +5,9 @@ mixin investment-example()
   +b.SECTION.section._dark_gradient
     +b.investment-example.container
       +section-title('Рассмотрим на примере', 'white')
-      +e.title Инвестиции vs Депозит
+      +e.title.wow.fadeInUp Инвестиции vs Депозит
       +b.row.examples-wrapper
-        +b.column._xs-6._sm-6._md-6._lg-6
+        +b.column._xs-12._sm-12._md-6._lg-6.wow.fadeInUp
           +b.invest-info
             +e.block
               +e.title Вложение в депозит
@@ -26,14 +26,15 @@ mixin investment-example()
                 +e.text Купонный доход
                 +e.value 5,55 % годовых
             +e.result-block
-              +e.data
+              +e.data._row
                 +e.text Сумма в конце срока
                 +e.result-value 105 550 ₽
+            +e.A.definition(href='#' data-tooltip title='Вложение в депозит') ?
 
-        +b.column._xs-6._sm-6._md-6._lg-6
+        +b.column._xs-12._sm-12._md-6._lg-6.wow.fadeInUp
           +b.invest-info
             +e.block
-              +e.title Вложение в депозит
+              +e.title Инвестиции в облигации
               +e.tabs-currency
                 +e.A.currency-button._active(href='#') ₽
                 +e.A.currency-button(href='#') $
@@ -47,11 +48,12 @@ mixin investment-example()
                 +e.value 1 год
               +e.data
                 +e.text Купонный доход
-                +e.value 5,55 % годовых
+                +e.value 12,6 % годовых
             +e.result-block
-              +e.data
+              +e.data._row
                 +e.text Сумма в конце срока
-                +e.result-value 105 550 ₽
+                +e.result-value 112 600 ₽
               +button-invest('Инвестировать')(class='invest-info__button')
+            +e.A.definition(href='#' data-tooltip title='Инвестиции в облигации') ?
       +e.info Данные по депозиту «Победа+», без пакета и капитализации процентов, при сумме инвестирования от 10 тыс. руб. сроком на 1 год.
 

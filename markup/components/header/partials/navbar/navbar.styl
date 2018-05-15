@@ -15,10 +15,13 @@
       overflow initial
 
   &__link
+    border-bottom 2px solid transparent
     color #fff
-    $transition(color)
+    $transition(all)
     line-height 19px
     margin-right 30px
+    padding-top 30px
+    padding-bottom 28px
     text-decoration none
     flex-shrink 0
 
@@ -41,5 +44,6 @@
           margin-bottom 0
 
     &:hover
-      color $c-red
-      text-decoration underline
+      border-bottom 2px solid $c-red
+      // color $c-red
+      // text-decoration underline

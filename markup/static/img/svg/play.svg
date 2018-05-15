@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ab-invest-1_10-05" transform="translate(-867.000000, -5367.000000)" fill="#FFFFFF">
+            <g id="where-1tab-1step" transform="translate(147.000000, 4829.000000)">
+                <g id="play-btn" transform="translate(697.000000, 517.000000)">
+                    <path d="M34.1025185,30.2190119 L26.0663157,35.6649015 C25.1502444,36.2856951 23.9220609,36.0192672 23.3230912,35.0698182 C23.1122751,34.7356458 23,34.3450365 23,33.9457719 L23,23.0539928 C23,21.9196039 23.8872754,21 24.9817851,21 C25.3670137,21 25.7438911,21.1163659 26.0663157,21.3348632 L34.1025185,26.7807528 C35.0185899,27.4015464 35.2756515,28.6744796 34.6766818,29.6239286 C34.5269739,29.8612361 34.3314835,30.0638494 34.1025185,30.2190119 Z" id="Triangle"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,7 @@
 @import './_grid.styl'
 @import './_rupture_config.styl'
 @require '../../../node_modules/swiper/dist/css/swiper.min.css'
+@require '../../../node_modules/owl.carousel/dist/assets/owl.carousel.css'
 
 html, body
   height 100%
@@ -111,3 +112,73 @@ html, body
   +below('xs')
     padding-right 15px
     padding-left 15px
+
+.invisible
+  visibility hidden!important
+
+for item in 'xs' 'sm' 'md' 'lg'
+  .hidden-{item}
+    +below(item)
+      display none!important
+
+.visible-only-xs
+  +above('sm')
+    display none!important
+
+.visible-only-sm
+  +above('md')
+    display none!important
+
+.visible-only-md
+  +above('lg')
+    display none!important
+
+.fadeOut
+  animation fadeOut .3s ease forwards!important
+
+@keyframes fadeOut
+  0%
+    opacity 1
+  100%
+    opacity 0
+
+.wow
+  visibility hidden
+  animation-duration .4s
+  animation-fill-mode both
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes slideInRight
+  0%
+    opacity 0
+    -webkit-transform translateX(2000px)
+    transform translateX(2000px)
+
+  100%
+    -webkit-transform translateX(0)
+    transform translateX(0)
+
+.slideInRight
+  -webkit-animation-name slideInRight
+  animation-name slideInRight
+

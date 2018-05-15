@@ -1,7 +1,7 @@
 $transition-duration = .3s
 
 .page-header
-  background url('%=static=%/general/ab-invest-mainscreen.png') no-repeat
+  background url('%=static=%/general/ab-invest-mainscreen-3.png') no-repeat
   background-size cover
   background-position bottom
   position relative
@@ -12,35 +12,62 @@ $transition-duration = .3s
     +below('sm')
       display none
 
-  &__navbar
-    padding-top 30px
-    padding-bottom 30px
+  // &__navbar
 
   &__title
     color #FFF
-    font-size $fz-biggest
+    font-size $fz-triple
+    line-height 42px
     font-weight 100
-    line-height 66px
     margin-bottom 24px
-    width 42%
+    width 100%
+
+    +above('sm')
+      width 50%
+    +above('md')
+      font-size $fz-giant
+      line-height 48px
+      width 42%
+    +above('lg')
+      font-size $fz-biggest
+      line-height 66px
 
   &__button
-      margin-bottom 92px
+    padding-bottom 45px
+
+    +above('sm')
+      padding-bottom 92px
 
   &__text
     color #FFFFFF
     font-size $fz-large
-    font-weight 300
     line-height 26px
-    margin-bottom 60px
-    width 42%
+    font-weight 300
+    margin-bottom 45px
+    width 100%
+
+    +above('sm')
+      font-size $fz-large
+      line-height 26px
+      margin-bottom 60px
+      width 50%
+    +above('md')
+      font-size $fz-large
+      line-height 26px
+      width 42%
+    +above('lg')
+      font-size $fz-large
+      line-height 26px
 
   &__top-content
     position relative
     display flex
     justify-content space-between
     flex-wrap wrap
-    margin-bottom 100px
+    margin-bottom 60px
+
+    +above('sm')
+      margin-bottom 100px
 
   &__logo
     width 220px
@@ -59,16 +86,16 @@ $transition-duration = .3s
     align-items center
     z-index 1
 
-    +above('sm')
-      min-height 60px
+    // +above('sm')
+    //   min-height 60px
 
-    +below('md')
-      ^[0]_is_shown &
-        width 100%
+    // +below('md')
+    //   ^[0]_is_shown &
+    //     width 100%
 
-    +below('sm')
-      width 100%
-      justify-content space-between
+    // +below('sm')
+    //   width 100%
+    //   justify-content space-between
 
   &__content
     margin-right 55px

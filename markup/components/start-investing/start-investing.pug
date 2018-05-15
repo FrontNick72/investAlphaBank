@@ -5,9 +5,9 @@ mixin start-investing()
   +b.SECTION.section
     +b.start-investing.container
       +section-title('4 простых шага')
-      +e.title Как начать инвестировать
+      +e.title.wow.fadeInUp Как начать инвестировать
       +b.row.start-investing-wrapper
-        +b.column._xs-6._sm-6._md-6._lg-6
+        +b.column._xs-12._sm-12._md-6._lg-6.wow.fadeInUp
           +b.step-invest
             +e.icon
               +e.number 1
@@ -15,7 +15,7 @@ mixin start-investing()
             +e.content
               +e.title Откройте счет
               +e.text Брокерский счет открывается в приложении за минуту, подтверждение открытия по смс.
-        +b.column._xs-6._sm-6._md-6._lg-6
+        +b.column._xs-12._sm-12._md-6._lg-6.wow.fadeInUp
           +b.step-invest
             +e.icon
               +e.number 2
@@ -23,7 +23,7 @@ mixin start-investing()
             +e.content
               +e.title Пополните счет
               +e.text Внести средства можно переводом между счетами непосредственно в Альфа-Мобайл или Альфа-Клик.
-        +b.column._xs-6._sm-6._md-6._lg-6
+        +b.column._xs-12._sm-12._md-6._lg-6.wow.fadeInUp
           +b.step-invest
             +e.icon
               +e.number 3
@@ -31,7 +31,7 @@ mixin start-investing()
             +e.content
               +e.title Выберите инструмент
               +e.text Получайте всю информацию о доходности в удобное для вас время через приложение.
-        +b.column._xs-6._sm-6._md-6._lg-6
+        +b.column._xs-12._sm-12._md-6._lg-6.wow.fadeInUp
           +b.step-invest
             +e.icon
               +e.number 4
@@ -39,5 +39,5 @@ mixin start-investing()
             +e.content
               +e.title Зарабатывайте
               +e.text Получайте доходы от инвестиций на брокерский счет и моментально переводите их на свой текущий.
-      +e.button
+      +e.button.wow.fadeInUp
         +button-invest('Начать инвестировать')

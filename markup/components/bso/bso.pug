@@ -1,0 +1,56 @@
+mixin bso()
+  +b.popup(data-modal='bso')
+    +e.content
+      +e.container.container
+        +e.close-button._grey
+        +e.body
+          +b.bso
+            +e.header
+              +e.type БСО
+              +e.row
+                +e.block
+                  +e.logo $
+                  +e.name Альфа Robots USD
+                +e.button
+                  +button-invest('Купить')
+            +e.body
+              +e.title О БСО
+              +e.text Структурный продукт можно сравнить с инвестиционным портфелем, который включает в себя несколько финансовых инструментов. Большинство структурных продуктов состоят из двух частей: инвестиционной и защитной. Защитная часть, как правило, включает такие активы, как депозиты и облигации. Эта часть обеспечивает небольшой, но стабильный и защищенный доход, который будет компенсировать возможные потери от инвестирования в высокодоходные инструменты.
+              +e.title Преимущества
+              +e.UL.list
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.P.list-text._mark 100% защита капитала
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.list-content
+                    +e.P.list-text Ожидаемый доход выше, чем по депозиту
+                    +e.P.list-text Гарантированный купонный — 5,0%
+                    +e.P.list-text._definition._mark._mark-two Дополнительный — 9,0%, в зависимости от прироста индекса NXSRUFA
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.P Вложения в западные фонды с коэффициентом участия 110%
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.P.list-text Формирование дохода лучшими мировыми управляющими
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.P.list-text Дата выпуска: 12.05.2017
+                  +e.P.list-text Дата погашения: 08.05.2020
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.P.list-text Досрочный выход в любой день по рыночной стоимости
+                +e.LI.list-item
+                  +e.icon
+                    include ../../static/img/svg/check-icon.svg
+                  +e.P.list-text Обращение на Московской бирже
+              +e.definitions
+                +e.definition 100% защита капитала реализована в формате облигации — безусловного обязательства Альфа-Банка вернуть 100% вложенных средств. Облигация: Альфа БО-19, ISIN: RU000A0JXQX5, регистрационный номер: 4В021901326В.
+                +e.definition._two Дополнительный доход зависит от динамики индекса NXSRUFA за 3 года. Если индекс вырастет — дополнительный доход составит 110% от прироста индекса. Если индекс снизится — дополнительный доход будет равен нулю. Среднегодовой прирост индекса с 2011 года составлял 8,19%. При сохранении этой динамики дополнительный доход составит 110%*8,19% = 9,0% годовых.
+

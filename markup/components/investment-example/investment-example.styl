@@ -4,10 +4,15 @@
 
   &__title
     color #FFFFFF
-    font-size $fz-triple
+    font-size $fz-double
     font-weight 300
-    line-height 42px
-    margin-bottom 40px
+    line-height 34px
+    margin-bottom 30px
+
+    +above('sm')
+      font-size $fz-triple
+      line-height 42px
+      margin-bottom 40px
 
   &__info
     color #FFFFFF
@@ -18,30 +23,118 @@
 .examples-wrapper
   margin-bottom 42px
 
+  .column
+    &:last-child
+      .invest-info
+        margin-bottom 0
+
 .invest-info
   background #fff
   box-shadow 0 2px 24px 0 rgba(0,0,0,0.08), 0 2px 4px 0 rgba(181,187,194,0.1)
   border-radius 8px
-  padding 40px
+  padding 30px 25px
+  position relative
+  margin-bottom 20px
+
+  +above('sm')
+    padding 40px
+
+  +above('md')
+    height 100%
+    margin-bottom 0
+
+  +above('lg')
+    height auto
 
   &__block
     display flex
     align-items center
     justify-content space-between
-    margin-bottom 52px
+    margin-bottom 20px
+    flex-direction column
+
+    +above('sm')
+      flex-direction row
+      margin-bottom 52px
+
+    +above('md')
+      margin-bottom 45px
+
+    +above('lg')
+      margin-bottom 52px
 
   &__result-block
     display flex
-    align-items flex-end
+    align-items flex-start
     justify-content space-between
+    flex-direction column
+
+    +above('sm')
+      align-items flex-end
+      flex-direction row
+
+    +above('md')
+      align-items flex-start
+      flex-direction column
+
+    +above('lg')
+      align-items flex-end
+      flex-direction row
 
   &__button
     margin 0
     padding 20px 52px
+    width 100%
+
+    +above('sm')
+      width auto
+
+    +above('md')
+      width 100%
+
+    +above('lg')
+      width auto
 
   &__data
     display flex
     flex-direction column
+    align-items center
+    margin-bottom 10px
+
+    &:last-child
+      margin-bottom 0
+
+    +above('sm')
+      align-items flex-start
+      margin-bottom 0
+
+    &_row
+      align-items center
+      flex-direction column
+      justify-content space-between
+      margin-bottom 15px
+      width 100%
+
+      +above('sm')
+        align-items flex-start
+        flex-direction column
+        justify-content flex-start
+        margin-bottom 0
+        width auto
+
+      +above('md')
+        align-items center
+        flex-direction row
+        justify-content space-between
+        margin-bottom 15px
+        width 100%
+
+      +above('lg')
+        align-items flex-start
+        flex-direction column
+        justify-content flex-start
+        margin-bottom 0
+        width auto
 
   &__text
     color #6D7986
@@ -52,26 +145,62 @@
 
   &__value
     color #172A3F
-    font-size $fz-xxl
+    font-size $fz-xlarge
     font-weight 300
-    line-height 28px
+    line-height 22px
+
+    +above('sm')
+      font-size $fz-xxl
+      line-height 28px
+
+    +above('md')
+      font-size $fz-xlarge
+      line-height 22px
+
+    +above('lg')
+      font-size $fz-xxl
+      line-height 28px
 
   &__result-value
     color $c-ui_red
-    font-size 48px
+    font-size $fz-double
     font-weight 300
-    line-height 57px
+    line-height 35px
 
-  &__tabs-currency
+    +above('sm')
+      font-size 48px
+      line-height 57px
+
+    +above('md')
+      font-size $fz-double
+      line-height 35px
+
+    +above('lg')
+      font-size 48px
+      line-height 57px
+
+  // &__tabs-currency
 
   &__currency-button
     color #6D7986
     display inline-block
-    font-size $fz-xxl
-    line-height 28px
+    font-size $fz-xlarge
+    line-height 22px
     margin-right 19px
     text-decoration none
     $transition(color)
+
+    +above('sm')
+      font-size $fz-xxl
+      line-height 28px
+
+    +above('md')
+      font-size $fz-xlarge
+      line-height 22px
+
+    +above('lg')
+      font-size $fz-xxl
+      line-height 28px
 
     &:hover
       color $c-ui_red
@@ -84,6 +213,47 @@
 
   &__title
     color #172a3f
-    font-size $fz-xxl
+    font-size $fz-xlarge
     font-weight 300
-    line-height 28px
+    line-height 22px
+    margin-bottom 15px
+    text-align center
+    width 100%
+
+    +above('sm')
+      font-size $fz-xxl
+      line-height 28px
+      margin-bottom 0
+      text-align left
+      width auto
+
+    +above('md')
+      font-size $fz-xlarge
+      line-height 22px
+
+    +above('lg')
+      font-size $fz-xxl
+      line-height 28px
+
+  &__definition
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid rgba(181,187,194, .2)
+    border-radius 50%
+    position absolute
+    top 8px
+    right 8px
+    color #6D7986
+    opacity 0.4
+    font-size $fz-xsmall
+    font-weight 700
+    line-height 12px
+    height 20px
+    width 20px
+    text-decoration none
+    transition .3s ease border,opacity
+
+    &:hover
+      border 1px solid rgba(181,187,194, 1)
+      opacity 0.4

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>088975F1-CEBC-47EA-8C90-0F768B4A4BCA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-9.7%" y="-8.1%" width="119.4%" height="119.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.709803922   0 0 0 0 0.733333333   0 0 0 0 0.760784314  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="30" cy="30" r="30"></circle>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ab-invest-10_10-05" transform="translate(-1076.000000, -2417.000000)">
+            <g id="non-active-card-rosbank-copy-2" filter="url(#filter-1)" transform="translate(930.000000, 2387.000000)">
+                <g id="rosbank-logo" transform="translate(150.000000, 32.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#4A8565" xlink:href="#path-2"></use>
+                    <text id="$" mask="url(#mask-3)" font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" line-spacing="24" fill="#FFFFFF">
+                        <tspan x="23" y="40">$</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
